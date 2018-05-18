@@ -1,0 +1,25 @@
+ErrorDocument 403 /404.html
+ErrorDocument 404 /404.html
+
+DirectoryIndex page2548109.html
+
+RewriteEngine On
+
+RewriteRule ^freelancers$ page2548109.html [NC]
+RewriteRule ^freelancers/$ page2548109.html [NC]
+
+RewriteRule ^coinbase-freelancers$ page2712745.html [NC]
+RewriteRule ^coinbase-freelancers/$ page2712745.html [NC]
+
+RewriteRule ^law$ page2592337.html [NC]
+RewriteRule ^law/$ page2592337.html [NC]
+
+RewriteRule ^int-law$ page2592346.html [NC]
+RewriteRule ^int-law/$ page2592346.html [NC]
+
+RewriteRule ^test$ page2603602.html [NC]
+RewriteRule ^test/$ page2603602.html [NC]
+
+RewriteRule ^int-freelancers$ page2719009.html [NC]
+RewriteRule ^int-freelancers/$ page2719009.html [NC]
+
