@@ -1,9 +1,6 @@
-body {
-  font-family: Customfont;
-}
-
 .t-body {
   margin: 0
+  font-family: Customfont !important;
 }
 
 #allrecords {
