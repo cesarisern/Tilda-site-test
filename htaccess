@@ -23,8 +23,6 @@ RewriteRule ^test/$ page2603602.html [NC]
 RewriteRule ^int-freelancers$ page2719009.html [NC]
 RewriteRule ^int-freelancers/$ page2719009.html [NC]
 
-<FilesMatch "\.(ttf|otf|eot|woff)$">
-<IfModule mod_headers.c>
-Header set Access-Control-Allow-Origin "*"
-</IfModule>
-</FilesMatch>
+RewriteRule ^new-design$ page3133513.html [NC]
+RewriteRule ^new-design/$ page3133513.html [NC]
+
