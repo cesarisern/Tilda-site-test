@@ -1,4 +1,4 @@
 User-Agent: *
 Disallow:
-Sitemap: http://joinlucid.com/sitemap.xml
-Host: joinlucid.com
+Sitemap: http://lightningtest.tilda.ws/sitemap.xml
+Host: lightningtest.tilda.ws
