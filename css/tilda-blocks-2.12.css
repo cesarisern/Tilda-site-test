@@ -26,6 +26,33 @@
     color: #0D2E52;
 }
 
+/* The animation code */
+@keyframes error-anim-solid {
+    from {background-color: red;}
+    to {background-color: #0d2e52;}
+}
+
+@keyframes error-anim-text {
+    from {color: red;}
+    to {color: #0d2e52;}
+}
+
+/* The element to apply the animation to */
+.error-animation-solid {
+    animation-name: error-anim-solid;
+    animation-duration: 4s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+.error-animation-text {
+    animation-name: error-anim-text;
+    animation-duration: 4s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+/*RECORDS START*/
+
 #allrecords {
   -webkit-font-smoothing: antialiased;
   background-color: none

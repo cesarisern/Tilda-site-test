@@ -22,6 +22,7 @@
   <link rel="stylesheet" href="css/tilda-slds-1.4.min.css" type="text/css" media="all" />
   <link rel="stylesheet" href="css/tilda-zoom-2.0.min.css" type="text/css" media="all" />
   <script src="js/jquery-1.10.2.min.js"></script>
+  <script src="https://embed.typeform.com/embed.js" type="text/javascript"></script>
   <script src="js/tilda-scripts-2.8.min.js"></script>
   <script src="js/tilda-blocks-2.7.js?t=1530870807"></script>
   <script src="js/lazyload-1.3.min.js"></script>
@@ -29,6 +30,7 @@
   <script src="js/tilda-slds-1.4.min.js"></script>
   <script src="js/hammer.min.js"></script>
   <script src="js/tilda-zoom-2.0.min.js"></script>
+  <script src="js/custom-form.js"></script>
   <!-- Facebook Pixel Code -->
   <script>
     ! function(f, b, e, v, n, t, s) {
@@ -364,7 +366,7 @@
             data-field-widthunits-value="">
             <div class='tn-atom'> <img class='tn-atom__img t-img' data-original='images/tild6134-6231-4037-b764-633435666365__arrow_down.svg' imgfield='tn_img_1530802986761'> </div>
           </div>
-          <div class='t396__elem tn-elem tn-elem__591795941530803082094' data-elem-id='1530803082094' data-elem-type='button' data-field-top-value="647" data-field-top-res-960-value="647" data-field-top-res-320-value="417" data-field-left-value="380"
+        <form action="#" onsubmit="validateCustomForm(document.getElementById('formValueId').value); return false">  <div class='t396__elem tn-elem tn-elem__591795941530803082094' data-elem-id='1530803082094' data-elem-type='button' data-field-top-value="647" data-field-top-res-960-value="647" data-field-top-res-320-value="417" data-field-left-value="380"
             data-field-left-res-960-value="370" data-field-left-res-320-value="10" data-field-height-value="55" data-field-height-res-320-value="55" data-field-width-value="200" data-field-width-res-320-value="300" data-field-axisy-value="top" data-field-axisx-value="left"
             data-field-container-value="grid" data-field-topunits-value="" data-field-leftunits-value="" data-field-heightunits-value="" data-field-widthunits-value="">
             <button type="submit" class='tn-atom main-form-button'>Join the waiting list</button>
@@ -372,12 +374,12 @@
           <div class='t396__elem tn-elem tn-elem__591795941530803146363' data-elem-id='1530803146363' data-elem-type='text' data-field-top-value="661" data-field-top-res-960-value="661" data-field-top-res-320-value="341" data-field-left-value="20" data-field-left-res-960-value="10"
             data-field-left-res-320-value="10" data-field-width-value="290" data-field-axisy-value="top" data-field-axisx-value="left" data-field-container-value="grid" data-field-topunits-value="" data-field-leftunits-value="" data-field-heightunits-value=""
             data-field-widthunits-value="">
-            <input type="text" placeholder="Your email" class='tn-atom main-form' field='tn_text_1530803146363'></input>
-          </div>
-          <div class='t396__elem tn-elem tn-elem__591795941530803210771' data-elem-id='1530803210771' data-elem-type='shape' data-field-top-value="701" data-field-top-res-960-value="701" data-field-top-res-320-value="381" data-field-left-value="21" data-field-left-res-960-value="11"
+            <input type="text" id="formValueId" placeholder="Your email" class='tn-atom main-form' field='tn_text_1530803146363' required></input>
+          </div></form>
+          <div  class='t396__elem tn-elem tn-elem__591795941530803210771' data-elem-id='1530803210771' data-elem-type='shape' data-field-top-value="701" data-field-top-res-960-value="701" data-field-top-res-320-value="381" data-field-left-value="21" data-field-left-res-960-value="11"
             data-field-left-res-320-value="11" data-field-height-value="1" data-field-width-value="301" data-field-axisy-value="top" data-field-axisx-value="left" data-field-container-value="grid" data-field-topunits-value="" data-field-leftunits-value=""
             data-field-heightunits-value="" data-field-widthunits-value="">
-            <div class='tn-atom'> </div>
+            <div id="form-underline" class='tn-atom'> </div>
           </div>
         </div>
       </div>
@@ -1720,7 +1722,7 @@
       <!-- T396 -->
       <style>
         #rec59226035 .t396__artboard {
-          height: 295px;
+          height: 225px;
           background-color: #ffffff;
         }
 
