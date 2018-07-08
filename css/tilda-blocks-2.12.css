@@ -3,6 +3,20 @@
   font-family: Customfont !important;
 }
 
+/*iOS Only*/
+@supports (-webkit-overflow-scrolling: touch) {
+  #main-form-element-1 {
+    top: 419px !important;
+    width: 66% !important;
+    left: 14% !important;
+  }
+
+  #main-form-element-2 {
+    top: 340px !important;
+  }
+}
+/*End iOS Only*/
+
 .main-form-button {
   padding-top: 15px;
   padding-bottom: 15px;
