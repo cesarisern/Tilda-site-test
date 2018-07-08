@@ -12,6 +12,7 @@ function validateCustomForm(email) {
     popupForm.open();
 
   } else {
+    
     // I'm using CSS animations because JQuery needs a plugin to animate color, yet I use JQuery to detect the end of the animation and then remove the animation class
     document.getElementById('form-underline').classList.add("error-animation-solid");
     document.getElementById('formValueId').classList.add("error-animation-text");
