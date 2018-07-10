@@ -2,6 +2,9 @@ function validateCustomForm(email) {
   if (/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(email)) { //Add better email verification ;-)
     console.log("Would pass");
 
+    mixpanel.identify();
+    mixpanel.people.set({ "$email": email });
+
     popupForm = window.typeformEmbed.makePopup("https://cesar231.typeform.com/to/H5joQp?email=" + email, {
       mode: 'drawer_left',
       autoClose: 1,
