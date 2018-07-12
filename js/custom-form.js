@@ -2,7 +2,7 @@ function validateCustomForm(email) {
 
   if (/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(email)) { //Add better email verification ;-)
     var d = new Date();
-    var MXPCreated = d.getFullYear()+"-"+d.getMonth()+"-"+d.getDate()+"T"+d.getHours()+":"+d.getMinutes()+":"+d.getSeconds();
+    var MXPCreated =d.toISOString(); //d.getFullYear()+"-"+d.getMonth()+"-"+d.getDate()+"T"+d.getHours()+":"+d.getMinutes()+":"+d.getSeconds();
 
     mixpanel.identify();
     mixpanel.people.set({ "$email": email });
