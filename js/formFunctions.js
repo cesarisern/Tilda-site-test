@@ -14,7 +14,10 @@ function validateCustomForm(email) {
       mode: 'drawer_left',
       autoClose: 1,
       hideHeaders: true,
-      hideFooter: true
+      hideFooter: true,
+      onSubmit: function (){
+        mixpanel.people.set({ "Typeform completed": "true" });
+      }
     });
 
     popupForm.open();
