@@ -1,9 +1,12 @@
 function validateCustomForm(email) {
+
   if (/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(email)) { //Add better email verification ;-)
-    console.log("Would pass");
+    var d = new Date();
+    var MXPCreated = d.getFullYear()+"-"+d.getMonth()+"-"+d.getDate()+"T"+d.getHours()+":"+d.getMinutes()+":"+d.getSeconds();
 
     mixpanel.identify();
     mixpanel.people.set({ "$email": email });
+    mixpanel.people.set({ "$created": MXPCreated });
 
     fbq('track', 'Lead');
 
