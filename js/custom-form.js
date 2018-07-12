@@ -5,6 +5,8 @@ function validateCustomForm(email) {
     mixpanel.identify();
     mixpanel.people.set({ "$email": email });
 
+    fbq('track', 'Lead');
+
     popupForm = window.typeformEmbed.makePopup("https://cesar231.typeform.com/to/H5joQp?email=" + email, {
       mode: 'drawer_left',
       autoClose: 1,
