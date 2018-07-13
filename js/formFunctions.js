@@ -1,14 +1,14 @@
 function validateCustomForm(email) {
 
   if (/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(email)) { //Add better email verification ;-)
+    fbq('track', 'Lead');
+
     var d = new Date();
     var MXPCreated =d.toISOString(); //d.getFullYear()+"-"+d.getMonth()+"-"+d.getDate()+"T"+d.getHours()+":"+d.getMinutes()+":"+d.getSeconds();
 
     mixpanel.identify();
     mixpanel.people.set({ "$email": email });
     mixpanel.people.set({ "$created": MXPCreated });
-
-    fbq('track', 'Lead');
 
     popupForm = window.typeformEmbed.makePopup("https://cesar231.typeform.com/to/H5joQp?email=" + email, {
       mode: 'drawer_left',
